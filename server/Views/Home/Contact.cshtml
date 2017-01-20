@@ -1,0 +1,55 @@
+@{ ViewData["Title"] = "Contact"; }
+<h2>@ViewData["Title"].</h2>
+<h3>@ViewData["Message"]</h3>
+
+<address>
+    One Microsoft Way<br /> Redmond, WA 98052-6399<br />
+    <abbr title="Phone">P:</abbr> 425.555.0100
+</address>
+
+<address>
+    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
+    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+</address>
+<div>
+    <input type="text" id="r" placeholder="输出" />
+    <p id="loading">...</p>
+    <input type="button" id="btn_send" value="发送请求" placeholder="发送请求" />
+</div>
+@section scripts{
+<script>
+    $("#btn_send").click(function () {
+        $("#loading").show();
+       /* $.ajax({
+            url: "/Home/TestLongPull",
+            type: "post",
+            contentType: "JSON",
+            timeout: 100000,
+            success: function (data) {
+                $("#loading").hide();
+                $("#r").val(data);
+            },
+            error: function (msg) {
+                console.log(msg);
+                alert(msg);
+            }
+        });*/
+         $.ajax({
+            url: "/Home/TestLongPull",
+            type: "post",
+            contentType: "JSON",
+            timeout: 100000,
+            Connection:"close",
+            success: function (data) {
+                $("#loading").hide();
+                $("#r").val(data);
+            },
+            error: function (msg) {
+                console.log(msg);
+                alert(msg);
+            }
+
+        })
+    });
+</script>
+}
