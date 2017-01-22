@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>demo</title>
-    <link href='dist/css/com.css' type="text/css" rel="stylesheet" />
-    <link href='dist/css/tree.css' type="text/css" rel="stylesheet" />
+    <link href='../dist/css/luicom-0339cf56cd.min.css' type="text/css" rel="stylesheet" />
 </head>
 
 <body>
@@ -50,13 +49,12 @@
 <div>
     bag
 
-    <i class="lui_wordspeak"></i>
-    <div id="div_speak"></div>
-  
+    <i class="lui_wordspeak" data-src="../dist/bad.mp3"></i>
+
 </div>
 
-<script type="text/javascript" src="dep/jquery-3.1.1.js"></script>
-<script type="text/javascript" src="dist/js/lui.js"></script>
+<script type="text/javascript" src="../dep/jquery-3.1.1.js"></script>
+<script type="text/javascript" src="../dist/js/lui-17f8f2b0d4.min.js"></script>
 <script>
                               var t1, t2, webSocket;
                               $(function () {
@@ -142,23 +140,7 @@
                                       }
                                   }
                                   /*****websockt end***********/
-
-                                  function play_click(sef, url) {
-                                      var div = document.getElementById('div_speak');
-                                      div.innerHTML = '<embed src="' + url + '" loop="0" autostart="true" hidden="true"></embed>';
-                                      var emb = document.getElementsByTagName('EMBED')[0];
-                                      if (emb) {
-                                        //   div = document.getElementById('div2');
-                                        //   div.innerHTML = 'loading: ' + emb.src;
-                                          sef.disabled = true;
-                                        //   setTimeout(function () { div.innerHTML = ''; }, 1000);
-                                      }
-                                  }
-                                  $(".lui_wordspeak").bind("mouseover", function () {
-                                      play_click($(".wordPlay")[0],"bad_e.mp3");
-                                    //   .src = "bad_e.mp3";
-
-                                  });
+                                  lui.initWordSpeak();
                               });
                               var lui = new Lui();
                               function getg1(g) {

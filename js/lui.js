@@ -1,6 +1,7 @@
-var LuiTree=require(tree);
+// var LuiTree=require(tree);
 function Lui() {
     this.checkBox = null;
+    // this.initWordSpeak();
 }
 Lui.prototype = {
     constructor: Lui,
@@ -15,10 +16,18 @@ Lui.prototype = {
     initCheckBox: function (p) {
         //声明一个适用于全局的checkbox对象
         if (!this.checkBox) {
-            this.checkBox=new LuiCheckBox();
+            this.checkBox = new LuiCheckBox();
         }
-       var c = new LuiCheckBox();
-       return c.init(p);
-        
+        var c = new LuiCheckBox();
+        return c.init(p);
+
+    },
+    initWordSpeak: function (p) {
+        //声明一个适用于全局的wordspeak对象
+        if (!this.wordspeak) {
+            this.wordspeak = new LuiWordSpeak();
+        }
+        var c = new LuiWordSpeak();
+        return c.init(p);
     }
 };
