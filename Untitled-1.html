@@ -28,19 +28,36 @@ asd;fkadjsf wdfaadsfadsdsaflkjadslfasdjflasdfkjasd'fkas;dfljadlsf dsfjadlsfkjasd
 asd;fkadjsf
 </p>
 
+
+<div id="content">
+    <div style="margin-bottom: 20px;"> <button id="playButton">Play Music</button> <button id="pauseButton">Pause Music</button> <button id="stopButton">Stop Music</button></div>
+<audio id="myTune" controls>
+    <source src="bad.mp3">
+    <source src="bad.ogg"> </audio>
+
+ <!--<object id="myTuneObj" type="audio/x-mpeg" data="bad.mp3" autoplay="false" height="45">  
+   <param name="src" value="bad.mp3" />  
+   <param name="controller" value="true" />   
+    <param name="autoplay" value="false" /> 
+   <param name="autostart" value="0" />  
+</object> 
+  <script>  
+    document.getElementById('playButton').onclick = function() { document.getElementById('myTuneObj').play() };    document.getElementById('pauseButton').onclick = function() { document.getElementById('myTuneObj').pause() };    document.getElementById('stopButton').onclick = function() { document.getElementById('myTuneObj').stop() };  </script>-->
+    </div>
+
 <div id="div1"></div>
 <input type="button" value="立即" onclick="play_click(this,'http://www.zhuatu.com/crop/1.wav');">
 <div id="div2"></div>
 <script language="javascript">
-function play_click(sef, url) {
+    function play_click(sef, url) {
         var div = document.getElementById('div1');
-        div.innerHTML = '<embed src="' + url + '" loop="0" autostart="true" hidden="true"></embed>'; 
+        div.innerHTML = '<embed src="' + url + '" loop="0" autostart="true" hidden="true"></embed>';
         var emb = document.getElementsByTagName('EMBED')[0];
-         if (emb) {/* 这里可以写成一个判断 wav 文件是否已加载完毕，以下采用setTimeout模拟一下 */
+        if (emb) {/* 这里可以写成一个判断 wav 文件是否已加载完毕，以下采用setTimeout模拟一下 */
             div = document.getElementById('div2');
             div.innerHTML = 'loading: ' + emb.src;
             sef.disabled = true;
-            setTimeout( function () { div.innerHTML = ''; }, 1000);
+            setTimeout(function () { div.innerHTML = ''; }, 1000);
         }
     }</script>
 

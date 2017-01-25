@@ -26,8 +26,7 @@
                 }
             },
             "env": {
-                // "ASPNETCORE_ENVIRONMENT": "Development"
-                // "ASPNETCORE_ENVIRONMENT": "Production"
+                 "ASPNETCORE_ENVIRONMENT": "Development"
             },
             "sourceFileMap": {
                 "/Views": "${workspaceRoot}/Views"
@@ -38,9 +37,6 @@
             "type": "coreclr",
             "request": "attach",
             "processId": "${command.pickProcess}"
-        },
-        {
-            "name":"build"
         }
     ]
 }

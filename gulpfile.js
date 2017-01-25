@@ -6,8 +6,9 @@ var gulp = require("gulp"),
     minifyCss = require('gulp-minify-css'),//css压缩
     rev = require('gulp-rev'),//css 文件名 md5
     revCollector = require('gulp-rev-collector'),//路径替换
+    clean = require('gulp-clean'),
     uglify = require('gulp-uglify');//js压缩
-gulp.task("default", ["lint", "distjs", "less2css", "revhtml", "watch"]);
+gulp.task("default", ["lint", "distjs", "less2css", "revhtml"]);
 
 // 检查js
 gulp.task('lint', function () {
@@ -56,6 +57,10 @@ gulp.task("imgdist", function () {
 
 /**watch */
 gulp.task("watch", function () {
-    gulp.watch("js/*.js", ["lint", "distjs"]);
-    gulp.watch("less/*.less", ["less2css"]);
+    gulp.watch("js/*.js", ["default"]);
 });
+
+/**clean */
+gulp.task("clean",function(){
+    gulp.src("dist").pipe(clean())
+})

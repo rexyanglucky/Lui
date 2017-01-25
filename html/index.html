@@ -49,12 +49,18 @@
 <div>
     bag
 
-    <i class="lui_wordspeak" data-src="../dist/bad.mp3"></i>
+    <i class="lui_wordspeak" data-src="../dist/bad.mp3" data-auto="true" data-loop="2"></i>
+    <!--<embed src="../dist/bad.mp3"></embed>-->
+    <!--<object classid="clsid:22D6F312-B0F6-11D0-94AB-0080C74C7E95">
+        <param name="AutoStart" value="1" />
+        <param name="Src" value="../dist/bad.mp3" />
+    </object>-->
+
 
 </div>
 
 <script type="text/javascript" src="../dep/jquery-3.1.1.js"></script>
-<script type="text/javascript" src="../dist/js/lui-17f8f2b0d4.min.js"></script>
+<script type="text/javascript" src="../dist/js/lui.js"></script>
 <script>
                               var t1, t2, webSocket;
                               $(function () {
@@ -140,7 +146,7 @@
                                       }
                                   }
                                   /*****websockt end***********/
-                                  lui.initWordSpeak();
+                                  lui.initWordSpeak({ auto: true, loop: 2,callback:function(){console.log("播放完毕");alert("播放完毕")} });
                               });
                               var lui = new Lui();
                               function getg1(g) {
