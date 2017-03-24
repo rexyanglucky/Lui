@@ -2,161 +2,62 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>demo</title>
-    <link href='../dist/css/luicom-0339cf56cd.min.css' type="text/css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <title>demo</title>
+  <link href='../dist/css/luicom.css' type="text/css" rel="stylesheet" />
 </head>
 
 <body>
-    <h2>checkBox</h2>
-    <div>
-        <p>组1</p>
-        <luicheck class="lui_checkbox" data-name="g1" data-val="01" data-text="我是自定义1" data-checked="0"></luicheck>
-        <luicheck class="lui_checkbox" data-name="g1" data-val="02" data-text="我是自定义2" data-checked="0"></luicheck>
-        <input type="button" onclick="setg1('g1','01')" value="设置值"/>
-<input type="button" onclick="getg1('g1')" value="获取值"/>
-</div>
-<div>
+  <h2>单词播放</h2>
+  <div>
+    <span>
+    disrupt
+</span>
+    <i class="lui_wordspeak" data-src="http://dict.youdao.com/dictvoice?audio=disrupt&type=1" data-auto="true" data-loop="2"></i>
+    after school
+      <i class="lui_wordspeak" data-src="https://voice.mofangge.com/wordmp3/voice/after%20schoolying.mp3" data-auto="true" data-loop="2"></i>
+  </div>
+  <h2>checkBox</h2>
+  <div>
+    <p>组1</p>
+    <luicheck class="lui_checkbox" data-name="g1" data-val="01" data-text="我是自定义1" data-checked="0"></luicheck>
+    <luicheck class="lui_checkbox" data-name="g1" data-val="02" data-text="我是自定义2" data-checked="0"></luicheck>
+    <input type="button" onclick="setg1('g1','01')" value="设置值"/>
+    <input type="button" onclick="getg1('g1')" value="获取值"/>
+  </div>
+  <div>
     <p>组2</p>
     <luicheck class="lui_checkbox" data-name="g2" data-val="01" data-text="我是自定义3" data-checked="0"></luicheck>
     <luicheck class="lui_checkbox" data-name="g2" data-val="02" data-text="我是自定义4" data-checked="0"></luicheck>
     <input type="button" onclick="setg1('g2','02')" value="设置值"/>
-<input type="button" onclick="getg1('g2')" value="获取值"/>
-</div>
-<hr/>
-<h2>tree</h2>
-<div id="tree_demo1"></div>
-<div id="tree_demo2"></div>
-<hr/>
-<h2>下拉框</h2>
-<!--<div class="lui_dropdownlist">-->
-<div id="drop_demo1"></div>
-<br>
-<div id="drop_demo2"></div>
-<!--</div>-->
-<hr/>
-<h2>websocket</h2>
-<div id="div_receive" style="width: 200px;height: 200px;border:solid 1px;"></div>
-我是：
-<div id="drop_my"></div>
-发送给：
-<div id="drop_contact"></div>
-<input type="text" id="web_input"></input>
+    <input type="button" onclick="getg1('g2')" value="获取值"/>
+  </div>
+  <hr/>
+  <h2>tree</h2>
+  <div id="tree_demo1"></div>
+  <div id="tree_demo2"></div>
+  <hr/>
+  <h2>下拉框</h2>
+  <!--<div class="lui_dropdownlist">-->
+  <div id="drop_demo1"></div>
+  <br>
+  <div id="drop_demo2"></div>
+  <!--</div>-->
+  <hr/>
+  <h2>websocket</h2>
+  <div id="div_receive" style="width: 200px;height: 200px;border:solid 1px;"></div>
+  我是：
+  <div id="drop_my"></div>
+  发送给：
+  <div id="drop_contact"></div>
+  <input type="text" id="web_input"></input>
 
-<input type="button" value="发送" id="btnsend">
-<hr/>
-<h2>单词播放</h2>
-<div>
-    bag
+  <input type="button" value="发送" id="btnsend">
+  <hr/>
 
-    <i class="lui_wordspeak" data-src="../dist/bad.mp3" data-auto="true" data-loop="2"></i>
-    <!--<embed src="../dist/bad.mp3"></embed>-->
-    <!--<object classid="clsid:22D6F312-B0F6-11D0-94AB-0080C74C7E95">
-        <param name="AutoStart" value="1" />
-        <param name="Src" value="../dist/bad.mp3" />
-    </object>-->
-
-
-</div>
-
-<script type="text/javascript" src="../dep/jquery-3.1.1.js"></script>
-<script type="text/javascript" src="../dist/js/lui.js"></script>
-<script>
-                              var t1, t2, webSocket;
-                              $(function () {
-
-
-                                  /*初始化树
-                      *warpid 容器ID
-                      *nameField 节点展示内容字段
-                      *idField   节点绑定id字段
-                      *parentField 节点父级ID
-                      *data      数据列表 json格式
-                      *showParentCheckBox 父节点元素是否显示复选框
-                      *showCheckBox 子节点元素是否显示复选框
-                      */
-                                  var p = {
-                                      warpid: "tree_demo1", nameField: 'name', idField: 'id', parentField: 'pid', isOnlyLeafCallBack: true, showParentCheckBox: true, showCheckBox: true, data: [{ name: '01', id: '00', pid: '' }, { name: '02', id: '00_01', pid: '00' }, { name: '03', id: '00_02', pid: '00' }, { name: '04', id: '00_01_01', pid: '00_01' }, { name: '05', id: '00_01_02', pid: '00_01' }, { name: '06', id: '00_02_01', pid: '00_02' }, { name: '07', id: '00_02_02', pid: '00_02' }], selectedCallBack: function (groupname, val) {
-                                          // var j=JSON.parse(unescape(val));
-                                          console.log(val);
-                                      }
-                                  };
-                                  var p2 = {
-                                      warpid: "tree_demo2", nameField: 'name', idField: 'id', parentField: 'pid', isOnlyLeafCallBack: true, showParentCheckBox: true, showCheckBox: true, data: [{ name: '01', id: '00', pid: '' }, { name: '02', id: '00_01', pid: '00' }, { name: '03', id: '00_02', pid: '00' }, { name: '04', id: '00_01_01', pid: '00_01' }, { name: '05', id: '00_01_02', pid: '00_01' }, { name: '06', id: '00_02_01', pid: '00_02' }, { name: '07', id: '00_02_02', pid: '00_02' }], selectedCallBack: function (groupname, val) {
-                                          // var j=JSON.parse(unescape(val));
-                                          console.log(val);
-                                      }
-                                  };
-                                  // var p={warpid:"tree_demo1",nameField:'name',idField:'id',parentField:'pid',showParentCheckBox:false,showCheckBox:false,data:[{name:'01',id:'00',pid:''},{name:'02',id:'00_01',pid:'00'},{name:'03',id:'00_02',pid:'00'},{name:'04',id:'00_01_01',pid:'00_01'},{name:'05',id:'00_01_02',pid:'00_01'},{name:'06',id:'00_02_01',pid:'00_02'},{name:'07',id:'00_02_02',pid:'00_02'}]}
-
-
-                                  t2 = lui.initTree(p2);
-                                  t1 = lui.initTree(p);
-                                  lui.initDropDownList({ warpid: "drop_demo1", width: 200, nameField: 'name', idField: 'id', data: [{ name: '01', id: '00', pid: '' }, { name: '02', id: '00_01', pid: '00' }, { name: '03', id: '00_02', pid: '00' }, { name: '04', id: '00_01_01', pid: '00_01' }, { name: '05', id: '00_01_02', pid: '00_01' }, { name: '06', id: '00_02_01', pid: '00_02' }, { name: '07', id: '00_02_02', pid: '00_02' }] });
-                                  lui.initDropDownList({ warpid: "drop_demo2", width: 200, nameField: 'name', idField: 'id', data: [{ name: '01', id: '00', pid: '' }, { name: '02', id: '00_01', pid: '00' }, { name: '03', id: '00_02', pid: '00' }, { name: '04', id: '00_01_01', pid: '00_01' }, { name: '05', id: '00_01_02', pid: '00_01' }, { name: '06', id: '00_02_01', pid: '00_02' }, { name: '07', id: '00_02_02', pid: '00_02' }], defaultValue: "00_01" });
-
-
-                                  lui.initCheckBox({ group: "g1" });
-                                  lui.initCheckBox({ group: "g2" });
-                                  /*websocket -----------start**/
-                                  var dropcontact = lui.initDropDownList({ warpid: "drop_contact", width: 200, nameField: 'name', idField: 'id', data: [{ name: "群发", id: "" }, { name: '张三', id: '01' }, { name: '李四', id: '02' }, { name: '王五', id: '03' }, { name: '央吉卓玛', id: '04' }] });
-                                  var drop_my = lui.initDropDownList({ warpid: "drop_my", width: 200, nameField: 'name', idField: 'id', data: [{ name: "群发", id: "" }, { name: '张三', id: '01' }, { name: '李四', id: '02' }, { name: '王五', id: '03' }, { name: '央吉卓玛', id: '04' }] });
-
-                                  $("#btnsend").click(function () {
-                                      var c = dropcontact.getValue().value;
-                                      var f = drop_my.getValue().value;
-                                      sendData(c, $("#web_input").val(), f)
-
-                                  });
-                                  //w:向谁发，d 发送内容
-                                  function sendData(w, d, f) {
-                                      initWebSocket();
-                                      if (webSocket.OPEN && webSocket.readyState == 1) {
-                                          var s = "<custom_separator>";
-                                          webSocket.send(w + s + d + s + f);
-                                      }
-                                      if (webSocket.readyState == 2 || webSocket.readyState == 3) {
-                                          $("#div_receive").append("WebSocket closed");
-                                      }
-                                  }
-                                  function initWebSocket() {
-                                      var url = "ws://localhost:5000/ws";
-                                      if (!webSocket) {
-                                          webSocket = new WebSocket(url);
-                                          //Open connection  handler.
-                                          webSocket.onopen = function () {
-                                              $("#div_receive").append("WebSocket opened" + "<br>");
-
-                                          };
-
-                                          //Message data handler.
-                                          webSocket.onmessage = function (e) {
-                                              $("#div_receive").append(e.data + "<br>");
-                                          };
-
-                                          //Close event handler.
-                                          webSocket.onclose = function () {
-                                              $("#div_receive").append("WebSocket closed." + "<br>");
-                                          };
-
-                                          //Error event handler.
-                                          webSocket.onerror = function (e) {
-                                              $("#div_receive").append(e.message + "<br>");
-                                          }
-                                      }
-                                  }
-                                  /*****websockt end***********/
-                                  lui.initWordSpeak({ auto: true, loop: 2,callback:function(){console.log("播放完毕");alert("播放完毕")} });
-                              });
-                              var lui = new Lui();
-                              function getg1(g) {
-                                  lui.checkBox.getValue(g);
-                              }
-                              function setg1(g, val) {
-                                  lui.checkBox.setValue(g, val);
-                              }
-</script>
-
+  <script type="text/javascript" src="../dep/jquery-3.1.1.js"></script>
+  <script type="text/javascript" src="../dist/js/lui.js"></script>
+  <script type="text/javascript" src="../dist/js/demo/main.js"></script>
 </body>
 
 </html>

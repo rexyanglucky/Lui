@@ -23,11 +23,12 @@ Lui.prototype = {
 
     },
     initWordSpeak: function (p) {
-        //声明一个适用于全局的wordspeak对象
-        if (!this.wordspeak) {
-            this.wordspeak = new LuiWordSpeak();
-        }
+   
         var c = new LuiWordSpeak();
         return c.init(p);
+    },
+    toast:function(p){
+        var c = new LuiToast();
+        return c.pop(p);  
     }
 };

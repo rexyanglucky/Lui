@@ -1,80 +1,114 @@
-
 function LuiWordSpeak() {
     this.selector = "lui_wordspeak";
-    //参数
     this.param = {};
 }
 
 LuiWordSpeak.prototype = {
     constructor: LuiWordSpeak,
-    /*
-     *warpid 容器id
-     *data 数据集，json 串 [{name:rex,val:001},{name:lilei,val:002}]
-     *展示字段   textField
-     *实际值字段 valueField
-     *回调函数 callback 参数为当前触发的复选框上绑定的数据
-     */
-    init: function (param) {
+    init: function(param) {
         var sthis = this;
         param = param || {};
+        $(".lui_div_speak").remove();
         var luidivspeak = '<div class="lui_div_speak" id="lui_div_speak"/>';
         $("body").append(luidivspeak);
-        $(".lui_wordspeak").each(function (index, item) {
-            // $(item).unbind("mouseover");
-            $(item).unbind("click");
-            $(item).bind("click", function () {
-                // var soundurl = $(item).attr("data-src");
-                sthis.play(item);
+        $(".lui_wordspeak").each(function(index, item) {
+            // $(item).unbind("click");
+            // $(item).bind("click", function() {
+            //     sthis.play(item, 1, 1000, param.callback, true);
+            // });
+            $(item).unbind("mouseover");
+            $(item).bind("mouseover", function() {
+                sthis.play(item, 1, 1000, param.callback, true);
             });
+
         });
         if (param.auto) {
             param.loop = param.loop || 1;
             if (param.loop > 0) {
-                $(".lui_wordspeak").each(function (index, item) {
-                    sthis.play(item, param.loop,param.interval, param.callback);
-                });
+                // $(".lui_wordspeak").each(function(index, item) {
+                //     sthis.play(item, param.loop, param.interval, param.callback);
+                // });
+                var item = $(".lui_wordspeak")[0];
+                sthis.play(item, param.loop, param.interval, param.callback);
             }
         }
         sthis.param = param;
         return sthis;
     },
     //时间间隔
-    play: function (item, loop, interval, callback) {
+    play: function(item, loop, interval, callback, isclick) {
         var sthis = this;
         loop = loop || 1;
         interval = interval || 1000;
+        isclick = isclick || false;
+        if ($(item).attr("data-play") == 1) {
+            return;
+        } else {
+            if ($(item).attr("data-play", 1));
+        }
+
+        var audio = sthis.createAudio(item, loop, interval, callback, isclick);
+        console.log(isclick);
+
         if (loop > 0) {
-            var url = $(item).attr("data-src");
-            var div = document.getElementById('lui_div_speak');
-            div.innerHTML = '<audio id="lui_audio_speak"><source src="' + url + '"></audio>';
-            // div.innerHTML = '<embed src="' + url + '" loop="0" autostart="true" hidden="true"></embed>';
-            // var emb = document.getElementsByTagName('EMBED')[0];
-            // if (emb) {
-            //     div.disabled = true;
-            // }
-            var audio = $("#lui_audio_speak")[0];
+            if (!isclick) {
+                sthis.loop = loop - 1;
+                if (sthis.loop <= 1) {
+                    clearTimeout(sthis.speaktimer);
+                }
+            }
+            sthis.isclick = isclick;
             audio.play();
-            if (callback) {
+            //避免点击播放时也触发事件，将callback 改为callback&&isclick;过滤掉点击触发
+            if (callback && !isclick) {
                 if (loop === 1) {
-                    var is_playFinish = setInterval(function () {
+                    //audio.onended = null;
+                    var is_playFinish = setInterval(function() {
                         if (audio.ended) {
-                            callback();
+                            setTimeout(function() {
+                                callback();
+                            }, interval);
                             window.clearInterval(is_playFinish);
                         }
-                        setTimeout(function() {
-                             window.clearInterval(is_playFinish);
-                        }, 10000);
                     }, 5);
+                    setTimeout(function() {
+                        window.clearInterval(is_playFinish);
+                    }, 10000);
                 }
             }
             loop--;
         }
-        if (loop > 0) {
-            setTimeout(function () {
-                sthis.play(item, loop - 1,interval,callback);
-            }, interval);
+
+    },
+    createAudio: function(item, loop, interval, callback, isclick) {
+        var sthis = this;
+        var url = $(item).attr("data-src");
+        if ($("#lui_audio_speak").length > 0) {
+            $("#lui_audio_speak").find("source")[0].src = url;
+            document.getElementById("lui_audio_speak").load();
+            return $("#lui_audio_speak")[0];
         }
-        else { return; }
+        var div = document.getElementById('lui_div_speak');
+        div.innerHTML = '<audio id="lui_audio_speak"><source src="' + url + '"></audio>';
+        var audio = $("#lui_audio_speak")[0];
+        audio.onended = null;
+        audio.onended = function() {
+            console.log(sthis.loop);
+            console.log(interval);
+            $(item).attr("data-play", 0);
+            if (sthis.loop > 0) {
+                if (sthis.speaktimer) {
+                    clearTimeout(sthis.speaktimer);
+                }
+                sthis.speaktimer = setTimeout(function() {
+                    sthis.play(item, sthis.loop, interval, callback);
+                }, interval);
+            }
+            // else{clearTimeout(window.speaktimer);}
+        };
+
+        return audio;
     }
+
 
 };

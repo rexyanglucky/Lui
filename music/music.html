@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="/egword/build/css/experience/experience.css">
+    <title>音乐</title>
+</head>
+<body>
+
+<div>
+    <div class="title-audio">
+        a的猫咪音
+        <span class="go-back"></span>
+    </div>
+    <div class="state">正在播放...</div>
+    <div class="music-bg"></div>
+    <div class="main-decript">
+        【发音规则】学习a的自然音，发“哎”的音。发音时，嘴巴要张 大，使劲往下压下巴，发音较长：如cat(猫咪)，记住a的猫咪音哦!
+    </div>
+    <div class="music-event">
+        <span class="unit-loop" id="event-loop"></span>
+        <span class="pre"></span>
+        <span class="start" id="btn-stat"></span>
+        <span class="next"></span>
+    </div>
+    <div class="drag-bar">
+        <div class="progress">
+            <div class="inner-bar"></div>
+            <div class="dot"></div>
+        </div>
+        <p class="titme">
+            <span class="current-time">1:30</span> /
+            <span class="totl-time">5:00</span>
+        </p>
+    </div>
+    <audio id="audio" src="" autoplay="autoplay" style="display:none;"></audio>
+</div>
+  
+    <script src="/egword/build/js/jquery-3.1.1.min.js"></script>
+
+    <script src="/egword/build/js/zepto.min.js"></script>
+  
+    <script>
+        //后退事件
+        $('.go-back').click(function () {
+            window.location.href = "/Experience/Index/Units/"+@ViewBag.BookID;
+        });
+        var data={BookID:'@ViewBag.BookID',UnitID:'@unitModel.UnitID'};
+        var book_id='@ViewBag.BookID';
+        var unit_id='@unitModel.UnitID';
+        var unit_title='@unitModel.UnitTitle';
+        var unit_remark='@unitModel.Remark';
+    </script>
+    <script type="text/javascript" src="/egword/build/js/experience/word1.js"></script>
+
+
+
+
+
+
+</body>
+</html>
