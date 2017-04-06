@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyWebCore", "CompanyWebCore\CompanyWebCore.csproj", "{53D7DB2E-3667-4A22-9395-2D3575E34CE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dal", "Dal\Dal.csproj", "{38378677-6C63-4B53-B920-A64C235257A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53D7DB2E-3667-4A22-9395-2D3575E34CE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53D7DB2E-3667-4A22-9395-2D3575E34CE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53D7DB2E-3667-4A22-9395-2D3575E34CE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53D7DB2E-3667-4A22-9395-2D3575E34CE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38378677-6C63-4B53-B920-A64C235257A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38378677-6C63-4B53-B920-A64C235257A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38378677-6C63-4B53-B920-A64C235257A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38378677-6C63-4B53-B920-A64C235257A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -11,11 +11,13 @@ namespace CompanyWebCore
     {
         public static void Main(string[] args)
         {
+            Console.WriteLine(Bll.Class1.GetTestStr());
             var host = new WebHostBuilder()
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
                 .UseStartup<Startup>()
+                .UseApplicationInsights()
                 .Build();
 
             host.Run();

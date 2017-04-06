@@ -7,7 +7,7 @@
         {
             "taskName": "build",
             "args": [
-                "${workspaceRoot}\\CompanyWebCore.csproj"
+                "${workspaceRoot}\\CompanyWebCore\\CompanyWebCore.csproj"
             ],
             "isBuildCommand": true,
             "problemMatcher": "$msCompile"
