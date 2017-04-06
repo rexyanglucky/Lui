@@ -26,7 +26,7 @@ gulp.task('distjs', function() {
         .pipe(gulp.dest('dist/js'))
         .pipe(rev.manifest())
         .pipe(gulp.dest("dist/rev"));
-    gulp.src("js/demo/*.js")
+        gulp.src("js/demo/*.js")
         .pipe(gulp.dest("dist/js/demo"))
         .pipe(rename({
             suffix: ".min",
