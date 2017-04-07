@@ -1,0 +1,46 @@
+﻿@model List<Company.Models.ProductModel>
+@{
+    ViewBag.Title = "产品管理";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+<form class="form-inline definewidth m20" action="index.html" method="get">
+    类型名称：
+    <input type="text" name="menuname" id="menuname" class="abc input-default" placeholder="" value="">&nbsp;&nbsp;
+    <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; <a type="button" class="btn btn-success" id="addnew" href="/Admin/Product/Add">添加产品</a>
+</form>
+
+<table class="table table-bordered table-hover definewidth m10">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>产品名称</th>
+            <th>图片</th>
+            <th>产品详情</th>
+            <th>产品详情规格图片</th>
+            <th>产品类型</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (var k in Model)
+            {
+                <tr>
+                    <td>@k.ProductId</td>
+                    <td><img src="@k.ProductImg" /> </td>
+                    <td>@k.ProductDesc</td>
+                    <td>@k.ProductDetailImg</td>
+                    <td>@k.CategoryModel.CategoryName</td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr><td>还没有添加产品呢，点击【添加产品类型】添加</td></tr>
+        }
+    </tbody>
+
+</table>
+

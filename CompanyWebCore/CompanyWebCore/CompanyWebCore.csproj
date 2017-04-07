@@ -18,8 +18,8 @@
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Bll\Bll.csproj" />
+ <ItemGroup>
+    <ProjectReference Include="..\Company.Bll\Company.Bll.csproj" />
+    <ProjectReference Include="..\Company.Models\Company.Models.csproj" />
   </ItemGroup>
-
 </Project>

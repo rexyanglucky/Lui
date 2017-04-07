@@ -1,0 +1,46 @@
+﻿@model List<Company.Models.DictionaryModel>
+@{
+    ViewBag.Title = "公司信息管理";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+<form class="form-inline definewidth m20" action="index.html" method="get">
+    公司名称：
+    <input type="text" name="menuname" id="menuname" class="abc input-default" placeholder="" value="">&nbsp;&nbsp;
+    <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; <a type="button" class="btn btn-success" id="addnew" href="/Admin/Company/Add">新增公司</a>
+</form>
+
+<table class="table table-bordered table-hover definewidth m10">
+    <thead>
+        <tr>
+            <th>公司名称</th>
+            <th>Logo</th>
+            <th>联系电话</th>
+            <th>地址</th>
+            @*<th>Url</th>*@
+            <th>管理操作</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (var k in Model)
+            {
+            <tr>
+                <td>@k.CompanyName</td>
+                <td><img class="list_logo" src="@k.CompanyLogo"/></td>
+                <td>@k.Tel</td>
+                <td>@k.CompanyAddress</td>
+                <td>@k.CompanyName</td>
+            </tr>
+            }
+        }
+        else
+        {
+           <tr><td>还没有添加公司信息呢，点击【新增公司】添加</td></tr> 
+        }
+    </tbody>
+
+</table>
+

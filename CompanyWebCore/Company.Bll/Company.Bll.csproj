@@ -1,12 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp1.1</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Company.Dal\Company.Dal.csproj" />
     <ProjectReference Include="..\Company.Models\Company.Models.csproj" />
-    <ProjectReference Include="..\test\test.csproj" />
   </ItemGroup>
 </Project>

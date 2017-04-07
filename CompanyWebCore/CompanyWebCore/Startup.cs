@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Mvc.Controllers;
+using Microsoft.AspNetCore.Routing;
 
 namespace CompanyWebCore
 {
@@ -54,7 +56,15 @@ namespace CompanyWebCore
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+                var routeValue = new RouteValueDictionary();
+                routeValue.Add("area", "Admin");
+                routes.MapRoute("admin", "{area}/{controller=Index}/{action=Index}/{id?}",
+                    routeValue, routeValue);
+                //routes.MapAreaRoute("admin", "Admin", "Admin/{controller=Index}/{action=Index}/{id?}");
+                var rlist = routes.Routes;
+                rlist.ToList().ForEach(m => { Console.WriteLine(m.ToString()); });
             });
+
         }
     }
 }
