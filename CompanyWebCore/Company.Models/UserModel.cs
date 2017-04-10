@@ -8,7 +8,7 @@ namespace Company.Models
     public  class UserModel
     {
 
-        public virtual int UserId { get; set; }
+        public  int UserId { get; set; }
 
         public string Account { get; set; }
 

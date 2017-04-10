@@ -9,7 +9,7 @@
     public  class DictionaryModel
     {
 
-        public virtual int CompanyId { get; set; }
+        public  int CompanyId { get; set; }
 
         public string CompanyName { get; set; }
 

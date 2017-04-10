@@ -8,7 +8,7 @@ namespace Company.Models
     public  class SaleUserModel
     {
 
-        public virtual int SaleUserId { get; set; }
+        public  int SaleUserId { get; set; }
 
         public string SaleUserName { get; set; }
 
