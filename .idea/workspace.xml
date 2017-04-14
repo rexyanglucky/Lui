@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ca403b4f-ef46-4816-bc0b-ec4c23f30334" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/.vscode/launch.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/.vscode/tasks.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/Company.Bll/CategoryBll.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/Company.Bll/Class1.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/Company.Bll/Company.Bll.csproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/Company.Bll/DictInfoBll.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/Company.Bll/ProductBll.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/Company.Bll/SaleUserBll.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/Company.Dal/BloggingContext.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/Company.Dal/Class1.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/Company.Dal/Company.Dal.csproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/Company.Dal/CompanyWebContext.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/Company.Models/CategoryModel.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/Company.Models/Company.Models.csproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/Company.Models/DictionaryModel.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/Company.Models/ProductModel.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/Company.Models/ResponseModel.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/Company.Models/SaleUserModel.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/Company.Models/UserModel.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore.sln" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/.bowerrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/ApplicationBuilderExtension.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/Areas/Admin/Controllers/CategoryController.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/Areas/Admin/Controllers/CompanyController.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/Areas/Admin/Controllers/IndexController.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/Areas/Admin/Controllers/ProductController.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/Areas/Admin/Controllers/SaleUserController.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/Areas/Admin/Views/Category/Add.cshtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/Areas/Admin/Views/Category/Index.cshtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/Areas/Admin/Views/Company/Add.cshtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/Areas/Admin/Views/Company/Index.cshtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/Areas/Admin/Views/Index/Index.cshtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/Areas/Admin/Views/Product/Add.cshtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/Areas/Admin/Views/Product/Index.cshtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/Areas/Admin/Views/SaleUser/Add.cshtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/Areas/Admin/Views/SaleUser/Index.cshtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/Areas/Admin/Views/Shared/_Layout.cshtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/CompanyWebCore.csproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/Controllers/HomeController.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/Program.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/Properties/launchSettings.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/Startup.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/Views/Home/About.cshtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/Views/Home/Contact.cshtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/Views/Home/Index.cshtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/Views/Shared/Error.cshtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/Views/Shared/_Layout.cshtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/Views/Shared/_ValidationScriptsPartial.cshtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/Views/_ViewImports.cshtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/Views/_ViewStart.cshtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/appsettings.Development.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/appsettings.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/bundleconfig.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/css/site.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/css/site.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/images/banner1.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/images/banner2.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/images/banner3.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/images/banner4.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/js/site.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/js/site.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/bootstrap/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/bootstrap/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/bootstrap/dist/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/bootstrap/dist/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/bootstrap/dist/js/npm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/jquery-validation-unobtrusive/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/jquery-validation/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/jquery-validation/LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/jquery-validation/dist/additional-methods.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/jquery-validation/dist/jquery.validate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/jquery/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/jquery/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/jquery/dist/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/jquery/dist/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/CompanyWebCore/wwwroot/lib/jquery/dist/jquery.min.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/MainConsole/MainConsole.csproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/MainConsole/Program.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/test/TestClass.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompanyWebCore/test/test.csproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/aspcoreapp.xproj" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompanyCore/Company.Dal/Company.Dal.csproj" afterPath="$PROJECT_DIR$/CompanyCore/Company.Dal/Company.Dal.csproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompanyCore/Company.Dal/CompanyWebContext.cs" afterPath="$PROJECT_DIR$/CompanyCore/Company.Dal/CompanyWebContext.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompanyCore/Company.Test/Program.cs" afterPath="$PROJECT_DIR$/CompanyCore/Company.Test/Program.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompanyCore/CompanyCore.Web/CompanyCore.Web.csproj" afterPath="$PROJECT_DIR$/CompanyCore/CompanyCore.Web/CompanyCore.Web.csproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompanyCore/CompanyCore.Web/Startup.cs" afterPath="$PROJECT_DIR$/CompanyCore/CompanyCore.Web/Startup.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompanyCore/CompanyCore.Web/appsettings.json" afterPath="$PROJECT_DIR$/CompanyCore/CompanyCore.Web/appsettings.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/demo/main.js" afterPath="$PROJECT_DIR$/dist/js/demo/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/demo/main.js" afterPath="$PROJECT_DIR$/js/demo/main.js" />
+    </list>
+    <ignored path="Lui.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="Lui" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="381">
+              <caret line="47" column="60" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/demo/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="255" column="14" selection-start-line="255" selection-start-column="14" selection-end-line="255" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/js/demo/main.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <gulpfiles>
+      <GulpfileState>
+        <gulpfile-path>$PROJECT_DIR$/gulpfile.js</gulpfile-path>
+      </GulpfileState>
+    </gulpfiles>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ca403b4f-ef46-4816-bc0b-ec4c23f30334" name="Default" comment="" />
+      <created>1492073544160</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1492073544160</updated>
+      <workItem from="1492073545359" duration="1021000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1021000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="47" column="60" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/demo/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="255" column="14" selection-start-line="255" selection-start-column="14" selection-end-line="255" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

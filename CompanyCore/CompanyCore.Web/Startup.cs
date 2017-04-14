@@ -9,6 +9,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Mvc.Controllers;
 using Microsoft.AspNetCore.Routing;
+using Microsoft.Extensions.Options;
+
 
 namespace CompanyWebCore
 {
@@ -31,10 +33,12 @@ namespace CompanyWebCore
         {
             // Add framework services.
             services.AddMvc();
+            services.AddOptions();
+            services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, IOptions<AppSettings> appsettings)
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
@@ -64,6 +68,8 @@ namespace CompanyWebCore
                 var rlist = routes.Routes;
                 rlist.ToList().ForEach(m => { Console.WriteLine(m.ToString()); });
             });
+            AppSettingsServices.SetAppSettings(appsettings);
+            app.Map("/ws", SocketHandler.Map);
 
         }
     }
