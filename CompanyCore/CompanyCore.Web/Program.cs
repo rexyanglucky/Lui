@@ -4,7 +4,6 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
-
 namespace CompanyWebCore
 {
     public class Program
@@ -18,8 +17,17 @@ namespace CompanyWebCore
                 .UseStartup<Startup>()
                 .UseApplicationInsights()
                 .Build();
+            if (args.Length > 0) {
+                var serviceconfig = args[0];
+                if (serviceconfig.Equals("--windows-service"))
+                {
+                    
+                }
+            }
+            Console.WriteLine(args[0].ToString());
 
             host.Run();
+            
         }
     }
 }

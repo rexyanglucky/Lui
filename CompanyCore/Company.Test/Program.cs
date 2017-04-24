@@ -1,6 +1,7 @@
 ﻿using Company.Dal;
 using Company.Models;
 using System;
+using System.IO;
 using System.Collections.Generic;
 
 namespace Company.Test
@@ -9,10 +10,11 @@ namespace Company.Test
     {
         static void Main(string[] args)
         {
-
+Console.WriteLine(Directory.GetCurrentDirectory());
             List<string> strlist = new List<string>();
             ChangeList(strlist);
             Console.WriteLine(strlist.Count);
+            
             Console.Read();
             //using (var db = new CompanyWebContext())
             //{
