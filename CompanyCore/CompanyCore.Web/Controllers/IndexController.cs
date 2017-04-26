@@ -1,20 +1,16 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Company.Bll;
 
-namespace CompanyWeb.Areas.Company.Controllers
+namespace CompanyCore.Web.Controllers
 {
-    [Area("Company")]
     public class IndexController : Controller
     {
-        // GET: Admin/Index
-        public ActionResult Index()
+        public IActionResult Index()
         {
-     
             return View();
-
         }
     }
 }

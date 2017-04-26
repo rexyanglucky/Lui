@@ -6,6 +6,7 @@ using Company.Bll;
 
 namespace CompanyWeb.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class IndexController : Controller
     {
         // GET: Admin/Index

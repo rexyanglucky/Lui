@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Company.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -60,11 +61,12 @@ namespace CompanyWebCore
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
-                var routeValue = new RouteValueDictionary();
-                routeValue.Add("area", "Admin");
-                routes.MapRoute("admin", "{area}/{controller=Index}/{action=Index}/{id?}",
-                    routeValue, routeValue);
-                //routes.MapAreaRoute("admin", "Admin", "Admin/{controller=Index}/{action=Index}/{id?}");
+                //var routeValue = new RouteValueDictionary();
+                //routeValue.Add("area", "Admin");
+                //routes.MapRoute("admin", "{area}/{controller=Index}/{action=Index}/{id?}",
+                //    routeValue, routeValue);
+                routes.MapAreaRoute("admin", "Admin", "Admin/{controller=Index}/{action=Index}/{id?}",new {area = "Admin"},new {area="Admin"});
+                routes.MapAreaRoute("company", "Company", "Company/{controller=Index}/{action=Index}/{id?}", new { area = "Company" },new { area = "Company" });
                 var rlist = routes.Routes;
                 rlist.ToList().ForEach(m => { Console.WriteLine(m.ToString()); });
             });

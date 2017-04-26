@@ -1,3 +1,4 @@
+using CompanyWebCore;
 using Microsoft.Extensions.Options;
 namespace CompanyWebCore
 {

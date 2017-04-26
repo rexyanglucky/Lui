@@ -9,10 +9,79 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="%2a%2a\**" />
     <Compile Remove="src\**" />
+    <Content Remove="%2a%2a\**" />
     <Content Remove="src\**" />
+    <EmbeddedResource Remove="%2a%2a\**" />
     <EmbeddedResource Remove="src\**" />
+    <None Remove="%2a%2a\**" />
     <None Remove="src\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="%2a%2a/%2a.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="%2a%2a/%2a.cshtml" />
+    <Content Remove="%2a%2a/%2a.json" />
+    <Content Remove="%2a%2a/web.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="%2a%2a/%2a.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="%2a%2a/%2a" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
+    <Compile Include="Areas\Admin\Controllers\CompanyController.cs" />
+    <Compile Include="Areas\Admin\Controllers\IndexController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
+    <Compile Include="Areas\Admin\Controllers\SaleUserController.cs" />
+    <Compile Include="Areas\Company\Controllers\IndexController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\IndexController.cs" />
+    <Compile Include="CustomConfig\AppSettings.cs" />
+    <Compile Include="CustomConfig\AppSettingsServices.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Startup.cs" />
+    <Compile Include="WebSocketHandler.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.Development.json" />
+    <Content Include="appsettings.json" />
+    <Content Include="Areas\Admin\Views\Category\Add.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Company\Add.cshtml" />
+    <Content Include="Areas\Admin\Views\Company\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Index\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\Add.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\SaleUser\Add.cshtml" />
+    <Content Include="Areas\Admin\Views\SaleUser\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Company\Views\Index\Index.cshtml" />
+    <Content Include="Properties\launchSettings.json" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Index\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
+    <Content Include="Views\_ViewImports.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="webfront\package.json" />
+    <Content Include="webfront\src\dep\bootstrap\.bower.json" />
+    <Content Include="webfront\src\dep\jquery-validation-unobtrusive\.bower.json" />
+    <Content Include="webfront\src\dep\jquery-validation\.bower.json" />
+    <Content Include="webfront\src\dep\jquery\.bower.json" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
@@ -20,14 +89,72 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.2" />
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.WebSockets.Server" Version="0.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.1" />
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="1.1.0" />
   </ItemGroup>
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Company.Bll\Company.Bll.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml.user" />
+    <None Include="webfront\favicon.ico" />
+    <None Include="webfront\gulpfile.js" />
+    <None Include="webfront\gulp\config.js" />
+    <None Include="webfront\gulp\custom-error.js" />
+    <None Include="webfront\gulp\task\clean.js" />
+    <None Include="webfront\gulp\task\copyfile.js" />
+    <None Include="webfront\gulp\task\less.js" />
+    <None Include="webfront\gulp\task\watch.js" />
+    <None Include="webfront\gulp\task\webpack.js" />
+    <None Include="webfront\gulp\webpack.config.js" />
+    <None Include="webfront\src\css\normalize.css" />
+    <None Include="webfront\src\dep\bootstrap\dist\css\bootstrap-theme.css" />
+    <None Include="webfront\src\dep\bootstrap\dist\css\bootstrap-theme.css.map" />
+    <None Include="webfront\src\dep\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <None Include="webfront\src\dep\bootstrap\dist\css\bootstrap-theme.min.css.map" />
+    <None Include="webfront\src\dep\bootstrap\dist\css\bootstrap.css" />
+    <None Include="webfront\src\dep\bootstrap\dist\css\bootstrap.css.map" />
+    <None Include="webfront\src\dep\bootstrap\dist\css\bootstrap.min.css" />
+    <None Include="webfront\src\dep\bootstrap\dist\css\bootstrap.min.css.map" />
+    <None Include="webfront\src\dep\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="webfront\src\dep\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="webfront\src\dep\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="webfront\src\dep\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="webfront\src\dep\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="webfront\src\dep\bootstrap\dist\js\bootstrap.js" />
+    <None Include="webfront\src\dep\bootstrap\dist\js\bootstrap.min.js" />
+    <None Include="webfront\src\dep\bootstrap\dist\js\npm.js" />
+    <None Include="webfront\src\dep\bootstrap\LICENSE" />
+    <None Include="webfront\src\dep\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <None Include="webfront\src\dep\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <None Include="webfront\src\dep\jquery-validation\dist\additional-methods.js" />
+    <None Include="webfront\src\dep\jquery-validation\dist\additional-methods.min.js" />
+    <None Include="webfront\src\dep\jquery-validation\dist\jquery.validate.js" />
+    <None Include="webfront\src\dep\jquery-validation\dist\jquery.validate.min.js" />
+    <None Include="webfront\src\dep\jquery-validation\LICENSE.md" />
+    <None Include="webfront\src\dep\jquery\dist\jquery.js" />
+    <None Include="webfront\src\dep\jquery\dist\jquery.min.js" />
+    <None Include="webfront\src\dep\jquery\dist\jquery.min.map" />
+    <None Include="webfront\src\dep\jquery\LICENSE.txt" />
+    <None Include="webfront\src\html\index.html" />
+    <None Include="webfront\src\html\index1.html" />
+    <None Include="webfront\src\img\jiebanglogo1_03.png" />
+    <None Include="webfront\src\img\jiebanglogo1_031.png" />
+    <None Include="webfront\src\img\jiebanglogo_03.png" />
+    <None Include="webfront\src\js\test.js" />
+    <None Include="webfront\src\less\test.less" />
+    <None Include="webfront\src\lib\util.js" />
   </ItemGroup>
 
 </Project>

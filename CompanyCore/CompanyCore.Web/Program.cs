@@ -17,14 +17,14 @@ namespace CompanyWebCore
                 .UseStartup<Startup>()
                 .UseApplicationInsights()
                 .Build();
-            if (args.Length > 0) {
-                var serviceconfig = args[0];
-                if (serviceconfig.Equals("--windows-service"))
-                {
+            //if (args.Length > 0) {
+            //    var serviceconfig = args[0];
+            //    if (serviceconfig.Equals("--windows-service"))
+            //    {
                     
-                }
-            }
-            Console.WriteLine(args[0].ToString());
+            //    }
+            //}
+            //Console.WriteLine(args[0].ToString());
 
             host.Run();
             
