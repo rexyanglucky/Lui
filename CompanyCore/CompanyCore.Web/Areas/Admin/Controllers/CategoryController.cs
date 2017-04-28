@@ -9,6 +9,7 @@ namespace CompanyWeb.Areas.Admin.Controllers
 {
     public class CategoryController : Controller
     {
+        [Area("Admin")]
         // GET: Admin/Category
         public ActionResult Index()
         {

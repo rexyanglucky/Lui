@@ -14,7 +14,7 @@ module.exports = {
         dest: path.join(__dirname, "../bundle/img/"),
     },
     dep: {
-        src: path.join(__dirname, "../src/dep/*"),
+        src: path.join(__dirname, "../src/dep/**/*"),
         dest: path.join(__dirname, "../bundle/dep/")
     },
     clean: {dir: path.join(__dirname, "../bundle")},

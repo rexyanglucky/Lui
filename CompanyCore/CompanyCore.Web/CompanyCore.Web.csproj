@@ -10,12 +10,16 @@
 
   <ItemGroup>
     <Compile Remove="%2a%2a\**" />
+    <Compile Remove="CustomConfig\**" />
     <Compile Remove="src\**" />
     <Content Remove="%2a%2a\**" />
+    <Content Remove="CustomConfig\**" />
     <Content Remove="src\**" />
     <EmbeddedResource Remove="%2a%2a\**" />
+    <EmbeddedResource Remove="CustomConfig\**" />
     <EmbeddedResource Remove="src\**" />
     <None Remove="%2a%2a\**" />
+    <None Remove="CustomConfig\**" />
     <None Remove="src\**" />
   </ItemGroup>
 
@@ -46,8 +50,6 @@
     <Compile Include="Areas\Company\Controllers\IndexController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\IndexController.cs" />
-    <Compile Include="CustomConfig\AppSettings.cs" />
-    <Compile Include="CustomConfig\AppSettingsServices.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="WebSocketHandler.cs" />

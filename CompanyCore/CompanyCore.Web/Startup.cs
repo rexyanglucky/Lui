@@ -65,8 +65,8 @@ namespace CompanyWebCore
                 //routeValue.Add("area", "Admin");
                 //routes.MapRoute("admin", "{area}/{controller=Index}/{action=Index}/{id?}",
                 //    routeValue, routeValue);
-                routes.MapAreaRoute("admin", "Admin", "Admin/{controller=Index}/{action=Index}/{id?}",new {area = "Admin"},new {area="Admin"});
-                routes.MapAreaRoute("company", "Company", "Company/{controller=Index}/{action=Index}/{id?}", new { area = "Company" },new { area = "Company" });
+                routes.MapAreaRoute("admin", "Admin", "Admin/{controller=Index}/{action=Index}/{id?}");
+                routes.MapAreaRoute("company", "Company", "Company/{controller=Index}/{action=Index}/{id?}");
                 var rlist = routes.Routes;
                 rlist.ToList().ForEach(m => { Console.WriteLine(m.ToString()); });
             });

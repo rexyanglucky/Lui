@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CompanyWeb.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class ProductController : Controller
     {
         // GET: Admin/Category

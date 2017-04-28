@@ -23,8 +23,8 @@ namespace Company.Dal
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            
-            optionsBuilder.UseMySQL(@"Database=company;Data Source=192.168.26.137;Port=3306;User=root;Password=123456;CharSet=utf8;Allow User Variables=True;");
+            optionsBuilder.UseMySQL(AppSettingsServices.AppSettings.BaseConfig.DbConectionString);
+            //optionsBuilder.UseMySQL(@"Database=company;Data Source=192.168.26.137;Port=3306;User=root;Password=123456;CharSet=utf8;Allow User Variables=True;");
         }
         
     }
