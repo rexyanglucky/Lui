@@ -233,3 +233,4 @@ _Pvt_Extensions
 # FAKE - F# Make
 .fake/
 /CompanyCore/CompanyCore.Web/webfront/.idea
+/CompanyCore/CompanyCore.Web/webfront/bundle

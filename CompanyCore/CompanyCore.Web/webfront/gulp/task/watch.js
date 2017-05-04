@@ -10,6 +10,11 @@ gulp.task("watching",function () {
         gulp.start('img');
     });
     watch(config.js.src,function(){
+        console.log("js change");
+        gulp.start('webpack');
+    });
+    watch(config.lib.src,function(){
+        console.log("js lib change");
         gulp.start('webpack');
     });
     watch(config.dep.src,function(){

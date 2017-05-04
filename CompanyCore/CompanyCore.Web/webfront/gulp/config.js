@@ -9,6 +9,9 @@ module.exports = {
         src: path.join(__dirname, "../src/js", "**/*.js"),
         dest: path.join(__dirname, "../bundle/js/"),
     },
+    lib: {
+        src: path.join(__dirname, "../src/lib", "**/*.js"),
+    },
     img: {
         src: path.join(__dirname, "../src/img/*"),
         dest: path.join(__dirname, "../bundle/img/"),

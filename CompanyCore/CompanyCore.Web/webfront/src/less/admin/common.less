@@ -1,0 +1,324 @@
+/*utf-8*/
+ul {
+  padding: 0 0 0 20rem/@baseFontSize;
+}
+
+@import "../variable.less";
+//html{font-size: 20px;}
+@header-warp-height: 70rem/@baseFontSize;
+@nav-warp-height: 0rem/@baseFontSize;
+@second-menu-warp-height: 30rem/@baseFontSize;
+/*color dark*/
+@header-warp-bg: #373d41;
+@nav-warp-bg: #373d41;
+@content-warp-bg: #333744;
+@main-content-warp-bg: @white-base;
+@user-info-color: #fff;
+
+/*右侧菜单*/
+@slider-nav-color-hover: #fff;
+@slider-nav-color: #fff;
+@slider-nav-first-bg: #42485B;
+@slider-nav-first-bg-hover: #00c1de;
+@slider-nav-second-bg: #42485B;
+@slider-nav-second-bg-hover: #00c1de;
+@slider-nav-toggle-control-bg: #4A5064;
+@slider-nav-width: 220rem/@baseFontSize;
+@slider-nav-width-sm: 50rem/@baseFontSize;
+
+/***********************公用样式 Start*********************/
+.none{display: none}
+.hidden{visibility: hidden}
+
+/***********************公用样式 End*********************/
+//绝对定位 页面高度固定
+html {
+  height: 100%;
+  body {
+    height: 100%;
+    .header-nav-warp {
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      .header-warp {
+        background: @header-warp-bg;
+        height: @header-warp-height;
+        line-height: @header-warp-height;
+        .logo-info-warp {
+          height: inherit;
+          //color:#a7b1c2;
+          color: @user-info-color;
+          padding: 0 20rem/@baseFontSize;
+          .logo {
+            float: left;
+            width: 100rem/@baseFontSize;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .user-info {
+            float: right;
+            .log-out {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      .nav-warp {
+        /*主菜单*/
+        .first-menu-warp {
+          background: @nav-warp-bg;
+          height: @nav-warp-height;
+          .first-nav {
+            padding: 0;
+            letter-spacing: -15px;
+            & > li {
+              display: inline-block;
+              margin-left: 5rem/@baseFontSize;
+            }
+            list-style: none;
+            li > a {
+              display: block;
+              text-decoration: none;
+              font-size: @baseFontSize;
+              .nav-icon {
+              }
+              .nav-label {
+                padding-left: 5rem/@baseFontSize
+              }
+              .nav-arrow {
+                line-height: inherit;
+                margin-left: 10rem/@baseFontSize
+              }
+              height: @nav-warp-height;
+              line-height: @nav-warp-height;
+              padding: 0 15rem/@baseFontSize;
+              background: @slider-nav-toggle-control-bg;
+              color: @slider-nav-color;
+              letter-spacing: normal;
+              &.active {
+                background: @main-content-warp-bg;
+                color: @slider-nav-second-bg;
+              }
+            }
+          }
+        }
+        /*次菜单*/
+        .second-menu-warp {
+          height: @second-menu-warp-height;
+          padding-left: @slider-nav-width-sm;
+          transition: padding-left 1s;
+          position: absolute;
+          z-index: 2;
+          width: 100%;
+          background: @content-warp-bg;
+          .second-nav {
+            padding: 0;
+            letter-spacing: -15px;
+            & > li {
+              display: inline-block;
+              margin-left: 5rem/@baseFontSize;
+            }
+            list-style: none;
+            li > a {
+              display: block;
+              text-decoration: none;
+              font-size: @baseFontSize;
+              .nav-icon {
+              }
+              .nav-label {
+                padding-left: 5rem/@baseFontSize
+              }
+              .nav-arrow {
+                line-height: inherit;
+                margin-left: 10rem/@baseFontSize
+              }
+              height: @second-menu-warp-height;
+              line-height: @second-menu-warp-height;
+              padding: 0 15rem/@baseFontSize;
+              background: @slider-nav-toggle-control-bg;
+              color: @slider-nav-color;
+              letter-spacing: normal;
+              &.active {
+                background: @main-content-warp-bg;
+                color: @slider-nav-second-bg;
+              }
+            }
+          }
+
+        }
+      }
+
+    }
+    .content-warp {
+      position: relative;
+      overflow: hidden;
+      background: @content-warp-bg;
+      height: 100%;
+      width: 100%;
+      /*侧边栏 移动端*/
+      .slider-warp {
+        position: absolute;
+        z-index: 3;
+        margin-top: -@second-menu-warp-height;
+        width: @slider-nav-width-sm;
+        transition: width 1s;
+        //overflow: auto;
+        //  @media only screen and (min-width: @screen-sm-min){
+        //  width:  @slider-nav-width;
+        //}
+
+        .slider-nav-toggle-control {
+          height: @second-menu-warp-height;
+          line-height: @second-menu-warp-height;
+          background: @slider-nav-toggle-control-bg;
+          color: @slider-nav-color;
+          text-align: center;
+          cursor: pointer;
+          display: block;
+          &:before {
+            content: "\f0c9";
+            display: inline-block;
+          }
+        }
+        .slider-nav {
+
+          list-style: none;
+          padding: 0;
+          li{
+            position: relative;
+          }
+          /*li a 的公用样式*/
+          li > a {
+            display: block;
+            text-decoration: none;
+            .nav-icon {
+            }
+            .nav-label {
+              padding-left: 5rem/@baseFontSize
+            }
+            .nav-arrow {
+              float: right;
+              line-height: inherit
+            }
+          }
+          & > li > a {
+            display: block;
+            color: @slider-nav-color;
+            padding: 20rem/@baseFontSize 0;
+            text-align: center;
+            background: @slider-nav-first-bg;
+            &:hover {
+              background: @slider-nav-first-bg-hover;
+              color: @slider-nav-color-hover;
+            }
+          }
+          ul {
+            position: absolute;
+            top: 0;
+            left:@slider-nav-width-sm ;
+            background: @slider-nav-first-bg;
+            width: @slider-nav-width;
+            list-style: none;
+            color: @slider-nav-color;
+            & > li > a {
+              color: @slider-nav-color;
+              padding: 15rem/@baseFontSize;
+              display: block;
+              &:hover {
+                background: @slider-nav-first-bg-hover;
+                color: @slider-nav-color-hover;
+              }
+            }
+          }
+        }
+      }
+      .main-content-warp {
+        background: @main-content-warp-bg;
+        margin-left: @slider-nav-width-sm;
+        transition: margin-left 1s;
+        overflow: auto;
+        height: 100%;
+      }
+    }
+    .header-nav-warp.pc {
+      .nav-warp {
+        .second-menu-warp {
+          padding-left: @slider-nav-width;
+        }
+      }
+    }
+    .content-warp.pc {
+      /*侧边栏 pc端*/
+      .slider-warp {
+        width: @slider-nav-width;
+        .slider-nav-toggle-control {
+          &:before {
+            content: "|||";
+          }
+        }
+        .slider-nav{
+          ul{position: static;background: none;}
+          &>li>a{
+            text-align: left;
+            padding: 20rem/@baseFontSize;
+          }
+        }
+      }
+      .main-content-warp {
+        margin-left: @slider-nav-width;
+      }
+    }
+    .header-nav-warp ~ .content-warp {
+      padding-top: @header-warp-height+@nav-warp-height+@second-menu-warp-height;
+    }
+  }
+}
+
+//页面高度随内容变化
+//html {
+//  body {
+//    .header-nav-warp {
+//      .header-warp {
+//        background: @header-warp-bg;
+//        height: @header-warp-height;
+//        .logo-info-warp {
+//          height: inherit;
+//        }
+//      }
+//      .nav-warp {
+//        /*主菜单*/
+//        .first-menu-warp{
+//          background: @nav-warp-bg;
+//          height: @nav-warp-height;
+//        }
+//        /*次菜单*/
+//        .second-menu-warp {
+//          height: @second-menu-warp-height;
+//          background: @content-warp-bg;
+//        }
+//      }
+//
+//    }
+//
+//    .content-warp {
+//
+//      background: @content-warp-bg;
+//      height: 100%;
+//      width: 100%;
+//      .slider-warp {
+//        position: absolute;
+//        width: 220rem/@baseFontSize;
+//      }
+//      .main-content-warp {
+//        background: @main-content-warp-bg;
+//        margin-left: 220rem/@baseFontSize;
+//        height: 100%;
+//      }
+//    }
+//    .header-nav-warp ~ .content-warp {
+//
+//    }
+//  }
+//}

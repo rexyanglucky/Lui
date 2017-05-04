@@ -6,7 +6,7 @@ module.exports = {
     extensions: ['.ts', '.js', '.json',''],
     modules: [path.join(__dirname, 'src'), 'node_modules','lib']
   },
-
+  devtool: "#cheap-module-eval-source-map",//dev 时使用
   module: {
     rules: [{
       test: /\.js$/,
