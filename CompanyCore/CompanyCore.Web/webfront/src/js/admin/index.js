@@ -1,4 +1,6 @@
-var lay = require("../lib/layout.js");
+var lay = require("../../lib/layout.js");
+
+//slider 绑定事件
 $(".slider-nav-toggle-control").click(function () {
     if ($(".content-warp").hasClass("pc")) {
         lay.slider.hideSlider();
@@ -26,6 +28,7 @@ $(".slider-nav>li").click(function () {
 
 });
 
+//header-nav 绑定事件
 $(".second-nav .nav-arrow").click(function () {
    lay.header.closePage(this);
 });
@@ -37,4 +40,5 @@ $(document).click(function () {
         return;
     }
     lay.slider.hideAllMenu();
-})
+});
+
